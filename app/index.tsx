@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import React from "react";
 import {Pressable,Button,Text, View, StyleSheet, TextInput,Image, Dimensions, Platform, ViewStyle} from "react-native";
 
@@ -15,7 +16,9 @@ export default function Index() {
         <TextInput placeholder="Your password"></TextInput>
       </View>
 
-      <Text style={{textAlign:"right",width:Dimensions.get('screen').width * 0.7}}>Forgotten password?</Text>
+      <View>
+        <Link style={{textAlign:"right",width:Dimensions.get('screen').width * 0.7}} href="/(tabs)/Account/UserAccount" push>Forgotten password?</Link>
+      </View>
 
       <View style={styles.ButtonCustom}>
         <Button title="Submit"></Button>
