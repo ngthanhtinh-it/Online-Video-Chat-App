@@ -16,7 +16,7 @@ export default function LobbyScreen() {
                 <Button title='Request Password Reset Link'></Button>
             </View>
             <View>
-                <Link href="/" push asChild>
+                <Link href="/(auth)/LoginForm" push asChild>
                     <Button title='Cancel'></Button>
                 </Link>
             </View>

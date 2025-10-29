@@ -9,6 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "bundleIdentifier":"com.ngthanhtinh.Online_Chat_Video",
       "supportsTablet": true
     },
     "android": {
@@ -27,6 +28,12 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme":"com.googleusercontent.apps.955387667081-3o6et9496e5ocq3h5ug8ts9u509bum8i"
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -51,5 +58,6 @@
         "projectId": "b5015ea7-61ad-4deb-ae46-57f726c2dca0"
       }
     }
+    
   }
 }
